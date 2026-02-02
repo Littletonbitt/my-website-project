@@ -1,0 +1,141 @@
+:root {
+	--flame-orange: #FF6B35;
+	--flame-red: #FF3A20;
+	--flame-yellow: #FFB347;
+	--bg-dark: #0f172a;
+	--bg-card: #1e293b;
+	--primary-color: #4361ee;
+	--secondary-color: #3a0ca3;
+	--accent-color: #7209b7;
+	--dark-bg: #121212;
+	--card-bg: #1e1e1e;
+	--text-light: #f8f9fa;
+	--text-muted: #adb5bd;
+}
+
+* {
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+}
+
+.flame-gradient-text {
+	background: linear-gradient(135deg, var(--flame-orange), var(--flame-yellow));
+	color: transparent;
+	background-clip: text;
+}
+
+.b-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: #0000001a;
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em #0000001a, 
+    		inset 0 .125em .5em #000000;
+}
+
+.progress-90 {
+	background: conic-gradient(var(--flame-orange) 90%, #334155 0);
+}
+
+.progress-60 {
+	background: conic-gradient(var(--flame-orange) 60%, #334155 0);
+}
+
+.progress-75 {
+	background: conic-gradient(var(--flame-orange) 75%, #334155 0);
+}
+
+.progress-circle {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.stats-card {
+	background: linear-gradient(135deg, var(--flame-orange), var(--flame-red));
+        color: white;
+        border-radius: 20px;
+        padding: 40px;
+        text-align: center;
+}
+
+.linear-gradient-flame {
+	background: linear-gradient(135deg, var(--flame-orange), var(--flame-red));
+}
+
+.h5-class {
+	font-size: 1.25em;
+}
+
+.bg-color-gray {
+	background: #9F9FA9;
+}
+
+.bg-color-lightgray {
+	background: #D2D6E5;
+}
+
+.feature-card {
+	padding: 8px 8px;
+	border: 1px solid #eee;
+	border-radius: 20px;
+}
+
+.hr-card-line {
+	background: #D2D6E5;
+	border-radius: 50%;
+	height: 3px;
+}
+
+.px-20 {
+	padding: 20px 0;
+}
+
+#logo-motive:hover {
+	transform: translateY(-10px) scale(1.02);
+	transition: 1s;
+}
+
+#logo-motive-card:hover {
+	border-color: var(--flame-orange);
+}
+
+#charts-container:hover {
+	border-color: var(--flame-red));
+}
+
+#charts-container-round:hover {
+	transform: translateY(-10px) scale(1.02);
+	transition: 1s;
+        border-color: var(--flame-red));
+}
+
+#button-strike:hover {
+	border: 1px;
+	transform: translateY(-10px) scale(1.02);
+        transition: 1s;
+}
+
+#chart-card:hover {
+	transform: translateY(-10px) scale(1.02);
+        transition: 1s;
+	border-color: var(--flame-orange);
+}
+
+#notif-card:hover {
+	transform: translateY(-10px) scale(1.02);
+        transition: 1s;
+        border-color: var(--flame-orange);
+}
+
+#reward-card:hover {
+	transform: translateY(-10px) scale(1.02);
+        transition: 1s;
+        border-color: var(--flame-orange);
+}

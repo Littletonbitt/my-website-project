@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="/home/alexander/Pictures/flameflame.ico" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+		 	integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+		<title>Daily Flame</title>
+	</head>
+	<body>
+		<header class="sticky-top">
+			<nav class="navbar navbar-expand-lg bg-body-secondary">
+				<div class="container-fluid">
+    					<a class="navbar-brand" href="#">
+						<img src="assets/icons/flameflame.png" alt="Logo" 
+							width="30" height="24" class="d-inline-block align-text-top">
+						Daily Flame
+					</a>
+    					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+						aria-expanded="false" aria-label="Toggle navigation">
+      						<span class="navbar-toggler-icon"></span>
+    					</button>
+    					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        						<li class="nav-item">
+          							<a class="nav-link active" aria-current="page" href="#">Отзывы</a>
+        						</li>
+							<li class="nav-item">
+                                                                <a class="nav-link active" aria-current="page" href="#">Подписка</a>
+                                                        </li>
+        						<li class="nav-item dropdown">
+          							<a class="nav-link dropdown-toggle" href="#" role="button" 
+									data-bs-toggle="dropdown" aria-expanded="false">
+            								Дополнительно
+          							</a>
+
+          							<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">FAQ</a></li>
+            								<li><a class="dropdown-item" href="pages/about-a-project.html">О проекте</a></li>
+									<li><a class="dropdown-item" href="#">Наши контакты</a></li>
+            								<li><hr class="dropdown-divider"></li>
+            								<li><a class="dropdown-item text-danger" href="#">Отправить отчёт об ошибке</a></li>
+          							</ul>
+        						</li>
+      						</ul>
+						<a href="pages/sign-in.html" class="btn btn-secondary" type="button">Sign in</a>
+    					</div>
+  				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="my-5 d-flex justify-content-center" id="logo-motive"> 
+				<div class="p-5 px-20 text-center border-1 bg-body-secondary feature-card" id="logo-motive-card"> 
+					<div class="container py-5"> 
+						<h1 class="text-body-emphasis">
+							<p>Зажги свою <span class="flame-gradient-text">мотивацию</span> 
+								и не дай пламени погаснуть
+							</p>
+						</h1> 
+						<p class="col-lg-8 mx-auto lead">
+							 Daily Flame помогает формировать полезные привычки и избавляться от вредных. 
+							 Отслеживайте прогресс, получайте награды и достигайте целей вместе с нами.
+						</p> 
+					</div> 
+				</div> 
+			</div>
+			<div class="container col-xl-10 col-xxl-8 px-4"> 
+				<div class="bg-body-secondary rounded-4 px-4 align-items-center g-lg-5 py-5"> 
+					<div class="d-flex align-items-center mb-3">
+						<div class="progress-circle progress-75">
+							<span class="small fw-bold">75%</span>
+						</div>
+                                		<div class="flex-grow-1">
+                                    			<div class="d-flex justify-content-between">
+                                        			<h6 class="mb-0">Утренняя зарядка</h6>
+                                        			<span class="badge bg-success">15 дней</span>
+                                    			</div>
+                                    			<div class="progress mt-1" style="height: 6px;">
+                                        			<div class="progress-bar bg-warning" style="width: 75%"></div>
+                                    			</div>
+                                		</div>
+                            		</div>
+
+                            		<div class="d-flex align-items-center mb-3">
+                                		<div class="progress-circle progress-90">
+                                    			<span class="small fw-bold">90%</span>
+                                		</div>
+                                		<div class="flex-grow-1">
+                                    			<div class="d-flex justify-content-between">
+                                        			<h6 class="mb-0">Чтение книги</h6>
+                                        			<span class="badge bg-success">21 день</span>
+                                    			</div>
+                                    			<div class="progress mt-1" style="height: 6px;">
+                                        			<div class="progress-bar bg-success" style="width: 90%"></div>
+                                    			</div>
+                                		</div>
+                            		</div>
+
+                            		<div class="d-flex align-items-center mb-3">
+                                		<div class="progress-circle progress-60">
+                                    			<span class="small fw-bold">60%</span>
+                                		</div>
+                                		<div class="flex-grow-1">
+                                    			<div class="d-flex justify-content-between">
+                                        			<h6 class="mb-0">Изучение языка</h6>
+                                        			<span class="badge bg-warning">7 дней</span>
+                                    			</div>
+                                    			<div class="progress mt-1" style="height: 6px;">
+                                        			<div class="progress-bar bg-info" style="width: 60%"></div>
+                                    			</div>
+                                		</div>
+                            		</div>
+                            		<div class="text-center mt-4 py-3 d-flex justify-content-center">
+                                		<a class="stats-card p-3 row border-0 text-decoration-none" id="button-strike" href="#">
+                                    			<span class="mb-0 h5-class">🔥 15-дневная серия!</span>
+                                    			<small>Не прерывайте цепочку!</small>
+                                		</a>
+                            		</div>
+				</div> 
+			</div>
+			<section id="features" class="py-5">
+        			<div class="container py-5">
+            				<div class="row mb-5">
+                				<div class="col-lg-8 mx-auto text-center">
+                    					<h2 class="display-5 fw-bold mb-3">
+								Почему выбирают Daily Flame?
+							</h2>
+                    					<p class="lead text-muted">
+								Мощные инструменты для формирования устойчивых привычек
+							</p>
+                				</div>
+            				</div>
+					<div class="row g-4">
+                				<div class="col-md-4">
+                    					<div class="feature-card bg-body-secondary" id="chart-card">
+                        					<div class="feature-icon">
+                            						<i class="bi bi-graph-up fs-4"></i>
+                        					</div>
+                        					<h4>Детальная статистика</h4>
+                        					<p class="text-muted">
+									Отслеживайте прогресс с помощью графиков и отчётов. 
+									Анализируйте свои успехи и находите точки роста.
+								</p>
+                    					</div>
+                				</div>
+                				<div class="col-md-4">
+                    					<div class="feature-card bg-body-secondary" id="notif-card">
+                        					<div class="feature-icon">
+                            						<i class="bi bi-bell fs-4"></i>
+                        					</div>
+                        					<h4>Умные напоминания</h4>
+                        					<p class="text-muted">
+									Персонализированные уведомления в оптимальное время. 
+									Никогда не пропускайте свои привычки.
+								</p>
+                    					</div>
+                				</div>
+                				<div class="col-md-4">
+                    					<div class="feature-card bg-body-secondary" id="reward-card">
+                        					<div class="feature-icon">
+                            						<i class="bi bi-trophy fs-4"></i>
+                        					</div>
+                        					<h4>Система наград</h4>
+                        					<p class="text-muted">
+									Получайте достижения и бейджи за последовательность. 
+									Мотивируйте себя игровыми элементами.
+								</p>
+                    					</div>
+                				</div>
+            				</div>
+        			</div>
+    			</section>
+			<footer class="footer bg-body-secondary">
+				<hr class="border-secondary my-5">
+        			<div class="container bg-body-secondary">
+            				<div class="row">
+                				<div class="col-lg-4 mb-4">
+                    					<a class="navbar-brand d-flex align-items-center mb-3" href="#">
+                        					<div class="feature-icon me-2">
+                            						<i class="bi bi-fire fs-4"></i>
+                        					</div>
+                        					<span class="h4 mb-0 flame-gradient-text">Daily Flame</span>
+                    					</a>
+                    					<p class="text-muted">
+								Помогаем формировать полезные привычки с 2023 года. 
+								Изменяем жизни к лучшему каждый день.
+							</p>
+                				</div>
+                				<div class="col-lg-2 col-md-4 mb-4">
+                    					<h5 class="mb-3">Продукт</h5>
+                    					<ul class="list-unstyled">
+                        					<li>
+									<a href="#" class="text-decoration-none text-muted">
+										Возможности
+									</a>
+								</li>
+                        					<li>
+									<a href="#" class="text-decoration-none text-muted">
+										Тарифы
+									</a>
+								</li>
+                        					<li>
+									<a href="#" class="text-decoration-none text-muted">
+										Приложения
+									</a>
+								</li>
+                        					<li>
+									<a href="#" class="text-decoration-none text-muted">
+										Обновления
+									</a>
+								</li>
+                    					</ul>
+                				</div>
+                				<div class="col-lg-2 col-md-4 mb-4">
+                    					<h5 class="mb-3">Компания</h5>
+                    					<ul class="list-unstyled">
+                        					<li>
+									<a href="#" class="text-decoration-none text-muted">
+										О нас
+									</a>
+								</li>
+                        					<li>
+									<a href="#" class="text-decoration-none text-muted">
+										Блог
+									</a>
+								</li>
+                        					<li>
+									<a href="#" class="text-decoration-none text-muted">
+										Карьера
+									</a>
+								</li>
+                        					<li>
+									<a href="#" class="text-decoration-none text-muted">
+										Контакты
+									</a>
+								</li>
+                    					</ul>
+                				</div>
+                				<div class="col-lg-4 col-md-4 mb-4">
+                    					<h5 class="mb-3">Подпишитесь на новости</h5>
+                    					<div class="input-group mb-3">
+                        					<input type="email" class="form-control bg-color-lightgray border-secondary" 
+									placeholder="Ваш email">
+                        					<button class="btn linear-gradient-flame" type="button">
+									Подписаться
+								</button>
+                    					</div>
+                    					<div class="d-flex gap-3">
+                        					<a href="#" class="text-muted">
+									<i class="bi bi-telegram fs-5"></i>
+								</a>
+                        					<a href="#" class="text-muted">
+									<i class="bi bi-vk fs-5"></i>
+								</a>
+                        					<a href="#" class="text-muted">
+									<i class="bi bi-youtube fs-5"></i>
+								</a>
+                        					<a href="#" class="text-muted">
+									<i class="bi bi-twitter-x fs-5"></i>
+								</a>
+                    					</div>
+                				</div>
+            				</div>
+            				<hr class="border-secondary my-5">
+            				<div class="row pb-1">
+                				<div class="col-md-6 text-muted">
+                    					© 2023 Daily Flame. Все права защищены.
+                				</div>
+                				<div class="col-md-6 text-end text-muted">
+                    					<a href="#" class="text-decoration-none text-muted me-3">
+								Политика конфиденциальности
+							</a>
+                    					<a href="#" class="text-decoration-none text-muted">
+								Условия использования
+							</a>
+                				</div>
+            				</div>
+        			</div>
+    			</footer>
+
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+		</script>
+	</body>
+</html>
