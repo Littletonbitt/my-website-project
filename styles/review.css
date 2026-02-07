@@ -1,0 +1,65 @@
+.review-card {
+	transition: all 0.3s ease;
+	border-radius: 15px;
+}
+        
+.review-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.photos-review {
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 3.5rem;
+}
+        
+.rating-stars {
+	color: #FFB347;
+	font-size: 1.2rem;
+}
+        
+.user-avatar {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	border: 3px solid #FF6B35;
+	overflow: hidden;
+}
+        
+.progress-highlight {
+	background: linear-gradient(135deg, #FF6B35, #FFB347);
+	color: white;
+}
+        
+.review-header {
+	background: linear-gradient(135deg, #FF6B35, #FF3A20);
+	color: white;
+	border-radius: 15px 15px 0 0;
+}
+        
+.habit-badge {
+	background-color: #e9ecef;
+	border-radius: 20px;
+	padding: 5px 15px;
+	font-size: 0.85rem;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+        
+.progress-circle-review {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin: 0 auto;        
+}
+
