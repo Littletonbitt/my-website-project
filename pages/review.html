@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="light">
+	<head>
+    		<meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<meta name="description" content="Отзывы пользователей Daily Flame - как трекер привычек помогает менять жизнь">
+    		<meta name="author" content="Daily Flame">
+    		<link rel="icon" href="/home/alexander/Pictures/flameflame.ico" type="image/x-icon">
+    		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+        		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    		<link rel="stylesheet" href="../styles/style.css">
+    		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    		<link rel="stylesheet" href="../styles/review.css">
+    		<title>Отзывы — Daily Flame</title>
+	</head>
+	<body>
+    		<header class="sticky-top">
+        		<nav class="navbar navbar-expand-lg bg-body-secondary">
+            			<div class="container-fluid">
+                			<a class="navbar-brand" href="../index.html">
+                    				<img src="../assets/icons/flameflame.png" alt="Logo" 
+                        				width="30" height="24" class="d-inline-block align-text-top">
+                    				Daily Flame
+                			</a>
+                			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        				aria-expanded="false" aria-label="Toggle navigation">
+                    				<span class="navbar-toggler-icon"></span>
+                			</button>
+                			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        				<li class="nav-item">
+                            					<a class="nav-link" href="../index.html">Главная</a>
+                        				</li>
+                        				<li class="nav-item">
+                            					<a class="nav-link" href="pricing.html">Тарифы</a>
+                        				</li>
+                        				<li class="nav-item">
+                            					<a class="nav-link active" aria-current="page" href="review.html">Отзывы</a>
+                        				</li>
+                        				<li class="nav-item dropdown">
+                            					<a class="nav-link dropdown-toggle" href="#" role="button" 
+                                						data-bs-toggle="dropdown" aria-expanded="false">
+                                					Дополнительно
+                            					</a>
+                            					<ul class="dropdown-menu">
+                                					<li>
+                                    						<a class="dropdown-item" href="faq.html">FAQ</a>
+                                					</li>
+                                					<li>
+                                    						<a class="dropdown-item" href="about-a-project.html">О проекте</a>
+                                					</li>
+                                					<li>
+                                    						<a class="dropdown-item" href="contacts.html">Наши контакты</a>
+                                					</li>
+                                					<li>
+                                    						<hr class="dropdown-divider">
+                                					</li>
+                                					<li>
+                                    						<a class="dropdown-item text-danger" href="report.html">Отправить отчёт об ошибке</a>
+                                					</li>
+                            					</ul>
+                        				</li>
+                    				</ul>
+                    				<a href="sign-in.html" class="btn btn-secondary">Войти</a>
+                			</div>
+            			</div>
+        		</nav>
+    		</header>
+    		<main>
+        		<div class="container py-5">
+            			<div class="row mb-5">
+                			<div class="col-lg-10 mx-auto text-center">
+                    				<h1 class="display-4 fw-bold mb-3">Истории успеха наших пользователей</h1>
+                    				<p class="lead text-muted mb-4">
+                        				Узнайте, как Daily Flame помогает людям формировать полезные привычки и достигать целей
+                    				</p>
+                    				<div class="d-flex justify-content-center align-items-center">
+                        				<div class="mx-4 text-center">
+                            					<h2 class="fw-bold display-6">4.8</h2>
+                            					<div class="rating-stars">
+                                					<i class="bi bi-star-fill"></i>
+                                					<i class="bi bi-star-fill"></i>
+                                					<i class="bi bi-star-fill"></i>
+                                					<i class="bi bi-star-fill"></i>
+                                					<i class="bi bi-star-half"></i>
+                            					</div>
+                            					<p class="small text-muted">Средняя оценка</p>
+                        				</div>
+                        				<div class="mx-4 text-center">
+                            					<h2 class="fw-bold display-6">2,500+</h2>
+                            					<p class="small text-muted">Пользователей</p>
+                        				</div>
+                        				<div class="mx-4 text-center">
+                            					<h2 class="fw-bold display-6">98%</h2>
+                            					<p class="small text-muted">Рекомендуют нас</p>
+                        				</div>
+                    				</div>
+                			</div>
+            			</div>
+            			<div class="row mb-5">
+                			<div class="col-lg-8 mx-auto">
+                    				<div class="bg-body-secondary rounded-4 p-4">
+                        				<p class="mb-3" style="font-size: 1.5rem;">Фильтровать отзывы</p>
+                        				<div class="d-flex flex-wrap gap-2">
+                            					<button class="btn btn-outline-primary active">Все отзывы</button>
+                            					<button class="btn btn-outline-primary">Начальный уровень</button>
+                            					<button class="btn btn-outline-primary">Продвинутые</button>
+                            					<button class="btn btn-outline-primary">Спорт и здоровье</button>
+                            					<button class="btn btn-outline-primary">Обучение</button>
+                            					<button class="btn btn-outline-primary">Работа и продуктивность</button>
+                        				</div>
+                    				</div>
+                			</div>
+            			</div>
+            			<div class="row g-4 mb-5">
+                			<div class="col-lg-6">
+                    				<div class="review-card bg-body-secondary p-4 h-100">
+                        				<div class="d-flex align-items-center mb-3">
+                            					<div class="user-avatar rounded-circle me-3 text-center">
+                                                                        <i class="bi bi-person-circle photos-review"></i>
+                                                                </div>
+                            					<div>
+                                					<p class="mb-1" style="font-size: 1.25rem;">Алексей Петров</p>
+                                					<div class="rating-stars mb-1">
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                					</div>
+                                					<p class="text-muted small mb-0">Использует Daily Flame 8 месяцев</p>
+                            					</div>
+                        				</div>
+                        				<p class="mb-3" style="font-size: 1.25rem;">"Смог пробежать полумарафон благодаря системе!"</p>
+                        				<p class="mb-3">
+                            					Раньше я не мог пробежать и километра без одышки. Начал с маленькой цели - бегать по 10 минут 
+                            					каждый день. Daily Flame напоминал мне о тренировках, показывал прогресс и давал награды за 
+                            					последовательность. Через 5 месяцев я уже бегал по 10 км, а сегодня пробежал свой первый 
+                            					полумарафон! Система наград и визуализация прогресса реально мотивируют не сдаваться.
+                        				</p>
+                        				<div class="mb-3">
+                            					<span class="habit-badge">Утренняя пробежка</span>
+                            					<span class="habit-badge">Здоровое питание</span>
+                            					<span class="habit-badge">Растяжка</span>
+                        				</div>
+                        				<div class="d-flex justify-content-between align-items-center">
+                           					<div class="progress-circle-review progress-highlight">
+                                					100%
+                            					</div>
+                            					<div class="text-end">
+                                					<p class="mb-0"><strong>241 день</strong></p>
+                                					<p class="text-muted small mb-0">подряд</p>
+                            					</div>
+                        				</div>
+                    				</div>
+                			</div>
+                			<div class="col-lg-6">
+                    				<div class="review-card bg-body-secondary p-4 h-100">
+                        				<div class="d-flex align-items-center mb-3">
+                            					<div class="user-avatar rounded-circle me-3 text-center">
+                                                                        <i class="bi bi-person-circle photos-review"></i>
+                                                                </div>
+                            					<div>
+                                					<p class="mb-1" style="font-size: 1.25rem;">Мария Соколова</p>
+                                					<div class="rating-stars mb-1">
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                					</div>
+                                					<p class="text-muted small mb-0">Использует Daily Flame 5 месяцев</p>
+                            					</div>
+                        				</div>
+                        				<p class="mb-3" style="font-size: 1.25rem;">"Выучила английский до B2 без курсов"</p>
+                       					<p class="mb-3">
+                            					Всегда хотела свободно говорить по-английски, но не хватало дисциплины заниматься регулярно. 
+                            					С Daily Flame я начала с 15 минут в день. Умные напоминания приходили в удобное время, 
+                            					статистика показывала, сколько слов я уже выучила. Самое главное - не хотелось "порвать цепочку" 
+                            					дней подряд. Сейчас я свободно общаюсь с коллегами из других стран и смотрю фильмы без субтитров!
+                        				</p>
+                        				<div class="mb-3">
+                            					<span class="habit-badge">Изучение английского</span>
+                            					<span class="habit-badge">Чтение на английском</span>
+                            					<span class="habit-badge">Просмотр фильмов</span>
+                        				</div>
+                        				<div class="d-flex justify-content-between align-items-center">
+                            					<div class="progress-circle-review" 
+									style="background: conic-gradient(#FF6B35 85%, #334155 0); color: white;">
+                                					85%
+                            					</div>
+                            					<div class="text-end">
+                                					<p class="mb-0"><strong>152 дня</strong></p>
+                                					<p class="text-muted small mb-0">из 180</p>
+                            					</div>
+                        				</div>
+                    				</div>
+                			</div>
+                			<div class="col-lg-6">
+                    				<div class="review-card bg-body-secondary p-4 h-100">
+                      		 			<div class="d-flex align-items-center mb-3">
+                            					<div class="user-avatar rounded-circle me-3 text-center">
+                                                                        <i class="bi bi-person-circle photos-review"></i>
+                                                                </div>
+                            					<div>
+                                					<p class="mb-1" style="font-size: 1.25rem;">Дмитрий Иванов</p>
+                                					<div class="rating-stars mb-1">
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star"></i>
+                                					</div>
+                                					<p class="text-muted small mb-0">Использует Daily Flame 3 месяца</p>
+                            					</div>
+                        				</div>
+                        				<p class="mb-3" style="font-size: 1.25rem;">"Бросил курить после 10 лет зависимости"</p>
+                        				<p class="mb-3">
+                            					Курил с университета, несколько раз пытался бросить - не получалось. Daily Flame помог 
+                            					подойти к этому системно. Я ставил маленькие цели: сначала сократить количество сигарет, 
+                            					потом перейти на электронную, затем полностью отказаться. Графики прогресса показывали, 
+                            					как улучшается здоровье и экономятся деньги. Уже 3 месяца без сигарет, и это самый длинный 
+                            					период в моей взрослой жизни!
+                        				</p>
+                        				<div class="mb-3">
+                            					<span class="habit-badge">Отказ от курения</span>
+                           					<span class="habit-badge">Дыхательные упражнения</span>
+                            					<span class="habit-badge">Спорт</span>
+                        				</div>
+                        				<div class="d-flex justify-content-between align-items-center">
+                            					<div class="progress-circle-review" 
+									style="background: conic-gradient(#FF6B35 90%, #334155 0); color: white;">
+                                					90%
+                            					</div>
+                            					<div class="text-end">
+                                					<p class="mb-0"><strong>90 дней</strong></p>
+                                					<p class="text-muted small mb-0">без сигарет</p>
+                            					</div>
+                        				</div>
+                    				</div>
+                			</div>
+                			<div class="col-lg-6">
+                    				<div class="review-card bg-body-secondary p-4 h-100">
+                        				<div class="d-flex align-items-center mb-3">
+								<div class="user-avatar rounded-circle me-3 text-center">
+									<i class="bi bi-person-circle photos-review"></i>
+								</div>
+								<div>
+                                					<p class="mb-1" style="font-size: 1.25rem;">Екатерина Волкова</p>
+                                					<div class="rating-stars mb-1">
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-fill"></i>
+                                    						<i class="bi bi-star-half"></i>
+                                					</div>
+                                					<p class="text-muted small mb-0">Использует Daily Flame 1 год</p>
+                            					</div>
+                        				</div>
+                        				<p class="mb-3" style="font-size: 1.25rem;">"Начала свой бизнес благодаря улучшенной продуктивности"</p>
+                        				<p class="mb-3">
+                            					Работала в офисе и мечтала о своем деле, но постоянно не хватало времени и энергии. 
+                            					Daily Flame помог выстроить режим дня: ранние подъемы, планирование задач, регулярные 
+                            					перерывы. Через 6 месяцев я накопила достаточно навыков и уверенности, чтобы уволиться 
+                            					и открыть свое кафе. Сейчас у меня 5 сотрудников, и я все так же использую трекер для 
+                            					личной эффективности!
+                        				</p>
+                        				<div class="mb-3">
+                            					<span class="habit-badge">Ранний подъем</span>
+                            					<span class="habit-badge">Планирование дня</span>
+                            					<span class="habit-badge">Обучение бизнесу</span>
+                        				</div>
+                        				<div class="d-flex justify-content-between align-items-center">
+                            					<div class="progress-circle-review progress-highlight">
+                                					100%
+                            					</div>
+                            					<div class="text-end">
+                                					<p class="mb-0"><strong>365 дней</strong></p>
+                                					<p class="text-muted small mb-0">год без пропусков</p>
+                            					</div>
+                        				</div>
+                    				</div>
+                			</div>
+            			</div>
+            			<div class="row mb-5">
+               				<div class="col-lg-10 mx-auto">
+                    				<div class="review-header p-4 text-center">
+                        				<h2 class="mb-3">Как Daily Flame помогает достигать целей</h2>
+                        				<p class="lead mb-0">Научно обоснованный подход к формированию привычек</p>
+                    				</div>
+                    				<div class="bg-body-secondary p-4 rounded-bottom">
+                        				<div class="row g-4">
+                            					<div class="col-md-4 text-center">
+                                					<div class="p-3">
+                                    						<i class="bi bi-check-circle-fill display-6 flame-gradient-text mb-3"></i>
+                                    						<p style="font-size: 1.25rem;">Малые шаги</p>
+                                    						<p class="text-muted">Разбиваем большие цели на маленькие ежедневные действия</p>
+                                					</div>
+                            					</div>
+                            					<div class="col-md-4 text-center">
+                                					<div class="p-3">
+                                    						<i class="bi bi-graph-up display-6 flame-gradient-text mb-3"></i>
+                                    						<p style="font-size: 1.25rem;">Визуализация прогресса</p>
+                                    						<p class="text-muted">
+											Графики и статистика показывают ваш рост и 
+											мотивируют продолжать
+										</p>
+                                					</div>
+                            					</div>
+                            					<div class="col-md-4 text-center">
+                                					<div class="p-3">
+                                    						<i class="bi bi-trophy display-6 flame-gradient-text mb-3"></i>
+                                    						<p style="font-size: 1.25rem;">Игровые элементы</p>
+                                    						<p class="text-muted">
+											Награды, бейджи и достижения превращают рутину в игру
+										</p>
+                                					</div>
+                            					</div>
+                        				</div>
+                    				</div>
+                			</div>
+            			</div>
+            			<div class="row">
+                			<div class="col-lg-8 mx-auto">
+                    				<div class="bg-body-secondary rounded-4 p-4">
+                        				<h3 class="text-center mb-4">Поделитесь своей историей успеха</h3>
+                        				<form>
+                            					<div class="row g-3">
+                                					<div class="col-md-6">
+                                    						<label for="name" class="form-label">Ваше имя</label>
+                                    						<input type="text" class="form-control" 
+											id="name" placeholder="Как к вам обращаться?">
+                                					</div>
+                                					<div class="col-md-6">
+                                    						<label for="email" class="form-label">Email</label>
+                                    						<input type="email" class="form-control" 
+											id="email" placeholder="Для связи с вами">
+                                					</div>
+                                					<div class="col-12">
+                                    						<span class="form-label">Ваша оценка</span>
+                                    						<div class="rating-stars fs-3 mb-3" id="rating-stars-select">
+                                        						<i class="bi bi-star" data-rating="1"></i>
+                                        						<i class="bi bi-star" data-rating="2"></i>
+                                        						<i class="bi bi-star" data-rating="3"></i>
+                                        						<i class="bi bi-star" data-rating="4"></i>
+                                        						<i class="bi bi-star" data-rating="5"></i>
+                                    						</div>
+                                    						<input type="hidden" id="rating-value" name="rating-value" value="0">
+                                					</div>
+                                					<div class="col-12">
+                                    						<label for="habits" class="form-label">
+											Какие привычки вы формировали?
+										</label>
+                                    						<input type="text" class="form-control" 
+											id="habits" placeholder="Например: бег, чтение, изучение языка...">
+                                					</div>
+                                					<div class="col-12">
+                                    						<label for="review" class="form-label">Ваш отзыв</label>
+                                    						<textarea class="form-control" id="review" rows="5" 
+											placeholder="Расскажите, как Daily Flame помог вам изменить жизнь...">
+										</textarea>
+                                					</div>
+                                					<div class="col-12">
+                                    						<div class="form-check">
+                                        						<input class="form-check-input" type="checkbox" id="consent1">
+                                        						<label class="form-check-label" for="consent1">
+                                            							Я согласен на публикацию этого отзыва на сайте
+                                        						</label>
+                                    						</div>
+										<div class="form-check">
+                                                                                        <input class="form-check-input" type="checkbox" id="consent2">
+                                                                                        <label class="form-check-label" for="consent2">
+                                                                                                Я подтверждаю согласие на обработку персональных данных
+                                                                                        </label>
+                                                                                </div>
+                                					</div>
+                                					<div class="col-12 text-center">
+                                    						<button type="submit" 
+											class="btn linear-gradient-flame text-white px-5 py-3"
+											disabled>
+											Отправить отзыв
+										</button>
+                                					</div>
+                            					</div>
+                        				</form>
+                    				</div>
+                			</div>
+            			</div>
+        		</div>
+    		</main>
+    		<footer class="footer bg-body-secondary">
+        		<hr class="border-secondary my-5">
+        		<div class="container bg-body-secondary">
+            			<div class="row">
+                			<div class="col-lg-4 mb-4">
+                    				<a class="navbar-brand d-flex align-items-center mb-3" href="../index.html">
+                        				<div class="feature-icon me-2">
+                            					<i class="bi bi-fire fs-4"></i>
+                        				</div>
+                        				<span class="h4 mb-0 flame-gradient-text">Daily Flame</span>
+                    				</a>
+                    				<p class="text-muted">
+                        				Помогаем формировать полезные привычки с 2023 года.
+                        				Изменяем жизни к лучшему каждый день.
+                    				</p>
+                			</div>
+                			<div class="col-lg-2 col-md-4 mb-4">
+                    				<p class="mb-3" style="font-size: 1.5rem;">Продукт</p>
+                    				<ul class="list-unstyled">
+                        				<li>
+                            					<a href="about-a-project.html" class="text-decoration-none text-muted">
+                                					Возможности
+                            					</a>
+                        				</li>
+                        				<li>
+                            					<a href="pricing.html" class="text-decoration-none text-muted">
+                                					Тарифы
+                            					</a>
+                        				</li>
+                        				<li>
+                            					<a href="#" class="text-decoration-none text-muted">
+                                					Приложения
+                            					</a>
+                        				</li>
+                        				<li>
+                            					<a href="#" class="text-decoration-none text-muted">
+                                					Обновления
+                            					</a>
+                        				</li>
+                    				</ul>
+                			</div>
+                			<div class="col-lg-2 col-md-4 mb-4">
+                    				<p class="mb-3" style="font-size: 1.5rem;">Компания</p>
+                    				<ul class="list-unstyled">
+                        				<li>
+                            					<a href="about-a-project.html" class="text-decoration-none text-muted">
+                                					О нас
+                            					</a>
+                        				</li>
+                        				<li>
+                            					<a href="#" class="text-decoration-none text-muted">
+                                					Блог
+                            					</a>
+                        				</li>
+                        				<li>
+                            					<a href="#" class="text-decoration-none text-muted">
+                                					Карьера
+                            					</a>
+                        				</li>
+                        				<li>
+                            					<a href="contacts.html" class="text-decoration-none text-muted">
+                                					Контакты
+                            					</a>
+                        				</li>
+                    				</ul>
+                			</div>
+                			<div class="col-lg-4 col-md-4 mb-4">
+                    				<p class="mb-3" style="font-size: 1.5rem;">Подпишитесь на новости</p>
+                    				<div class="input-group mb-3">
+                        				<input type="email" class="form-control bg-color-lightgray border-secondary"
+                            					placeholder="Ваш email">
+                        				<button class="btn linear-gradient-flame" type="button">
+                            					Подписаться
+                        				</button>
+                    				</div>
+                    				<div class="d-flex gap-3">
+                        				<a href="#" class="text-muted">
+                            					<i class="bi bi-telegram fs-5"></i>
+                        				</a>
+                        				<a href="#" class="text-muted">
+                            					<i class="bi bi-vk fs-5"></i>
+                        				</a>
+                        				<a href="#" class="text-muted">
+                            					<i class="bi bi-youtube fs-5"></i>
+                        				</a>
+                        				<a href="#" class="text-muted">
+                            					<i class="bi bi-twitter-x fs-5"></i>
+                        				</a>
+                    				</div>
+                			</div>
+            			</div>
+            			<hr class="border-secondary my-5">
+            			<div class="row pb-1">
+                			<div class="col-md-6 text-muted">
+                    				© 2023 Daily Flame. Все права защищены.
+                			</div>
+                			<div class="col-md-6 text-end text-muted">
+                    				<a href="#" class="text-decoration-none text-muted me-3">
+                        				Политика конфиденциальности
+                    				</a>
+                    				<a href="#" class="text-decoration-none text-muted">
+                        				Условия использования
+                    				</a>
+                			</div>
+            			</div>
+        		</div>
+    		</footer>
+
+    		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+        		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    		</script>
+    		<script src="../scripts/review.js"></script>
+	</body>
+</html>
