@@ -21,6 +21,12 @@
 .linear-gradient-flame:hover {
 	background: linear-gradient(135deg, var(--flame-red), var(--flame-orange));
 }
+/*
+.report-form-form:hover {
+	transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}*/
+
 
 .bug-report-header {
 	background: linear-gradient(135deg, var(--flame-orange), var(--flame-red));

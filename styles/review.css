@@ -21,6 +21,11 @@
 	color: #FFB347;
 	font-size: 1.2rem;
 }
+
+.required-field::after {
+	content: " *";
+	color: red;
+}
         
 .user-avatar {
 	width: 60px;
