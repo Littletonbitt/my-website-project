@@ -5,7 +5,7 @@
     		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     		<meta name="description" content="Отзывы пользователей Daily Flame - как трекер привычек помогает менять жизнь">
     		<meta name="author" content="Daily Flame">
-    		<link rel="icon" href="/home/alexander/Pictures/flameflame.ico" type="image/x-icon">
+    		<link rel="icon" href="../flameflame.ico" type="image/x-icon">
     		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
         		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     		<link rel="stylesheet" href="../styles/style.css">
@@ -325,26 +325,26 @@
                 			<div class="col-lg-8 mx-auto">
                     				<div class="bg-body-secondary rounded-4 p-4">
                         				<h3 class="text-center mb-4">Поделитесь своей историей успеха</h3>
-                        				<form>
+                        				<form id="share-form">
                             					<div class="row g-3">
                                 					<div class="col-md-6">
-                                    						<label for="name" class="form-label">Ваше имя</label>
+                                    						<label for="name" class="form-label required-field">Ваше имя</label>
                                     						<input type="text" class="form-control" 
 											id="name" placeholder="Как к вам обращаться?">
                                 					</div>
                                 					<div class="col-md-6">
-                                    						<label for="email" class="form-label">Email</label>
+                                    						<label for="email" class="form-label required-field">Email</label>
                                     						<input type="email" class="form-control" 
 											id="email" placeholder="Для связи с вами">
                                 					</div>
                                 					<div class="col-12">
-                                    						<span class="form-label">Ваша оценка</span>
+                                    						<span class="form-label required-field">Ваша оценка</span>
                                     						<div class="rating-stars fs-3 mb-3" id="rating-stars-select">
-                                        						<i class="bi bi-star" data-rating="1"></i>
-                                        						<i class="bi bi-star" data-rating="2"></i>
-                                        						<i class="bi bi-star" data-rating="3"></i>
-                                        						<i class="bi bi-star" data-rating="4"></i>
-                                        						<i class="bi bi-star" data-rating="5"></i>
+                                        						<i class="bi bi-star" data-rating="1"id="rating-select-num"></i>
+                                        						<i class="bi bi-star" data-rating="2" id="rating-select-num"></i>
+                                        						<i class="bi bi-star" data-rating="3" id="rating-select-num"></i>
+                                        						<i class="bi bi-star" data-rating="4" id="rating-select-num"></i>
+                                        						<i class="bi bi-star" data-rating="5" id="rating-select-num"></i>
                                     						</div>
                                     						<input type="hidden" id="rating-value" name="rating-value" value="0">
                                 					</div>
@@ -364,13 +364,13 @@
                                 					<div class="col-12">
                                     						<div class="form-check">
                                         						<input class="form-check-input" type="checkbox" id="consent1">
-                                        						<label class="form-check-label" for="consent1">
+                                        						<label class="form-check-label required-field" for="consent1">
                                             							Я согласен на публикацию этого отзыва на сайте
                                         						</label>
                                     						</div>
 										<div class="form-check">
                                                                                         <input class="form-check-input" type="checkbox" id="consent2">
-                                                                                        <label class="form-check-label" for="consent2">
+                                                                                        <label class="form-check-label required-field" for="consent2">
                                                                                                 Я подтверждаю согласие на обработку персональных данных
                                                                                         </label>
                                                                                 </div>
@@ -378,7 +378,7 @@
                                 					<div class="col-12 text-center">
                                     						<button type="submit" 
 											class="btn linear-gradient-flame text-white px-5 py-3"
-											disabled>
+											id="submit-button-review" disabled>
 											Отправить отзыв
 										</button>
                                 					</div>
@@ -501,5 +501,6 @@
         		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     		</script>
     		<script src="../scripts/review.js"></script>
+		<script src="../scripts/formlogging.js"></script>
 	</body>
 </html>
